@@ -1,0 +1,30 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignorar archivos compilados
+target/
+bin/
+*.class
+
+# Configuración de IDEs (IntelliJ, Eclipse, VSCode)
+.idea/
+*.iml
+*.vscode/
+.project
+.classpath
+.settings/
+
+# Dependencias de Maven o Gradle
+.m2/
+.gradle/
+build/
+
+# Archivos de logs
+logs/
+*.log
+
+# Variables de entorno y credenciales sensibles
+.env
