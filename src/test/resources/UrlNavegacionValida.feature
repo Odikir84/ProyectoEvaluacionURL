@@ -59,7 +59,7 @@ Scenario: Validar Orden de tareas de usuario por prioridad
     And presionar el botón Home para DESPLIEGUE de tareas
     Then VALIDA orden de tareas por prioridad     
 
-@Test
+
 Scenario: Validar orden de tareas por fecha de término
     Given como usuario accedo a SESION para ingreso fecha
     When ingresar CORREO de inicio para tarea fecha "ignacio.resp84@gmail.com"
@@ -67,3 +67,14 @@ Scenario: Validar orden de tareas por fecha de término
     And presionar el botón de INGRESO para login orden fecha
     And presionar el botón HOME para listar de tareas fecha
     Then ordenar tareas por fecha termino y validar orden
+
+@Test
+Scenario: Validar edicion de contraseña de usuario en sección perfil 
+    Given Que estoy autenticando en página de inicio para CAMBIO de contrasenia
+    When ingreso de CORREO de INICIO autenticacion "ignacio.resp84@gmail.com"  
+    And ingreso de CONTRASENIA usuario autenticacion "Sentra5678" 
+    And presionar el botón ingresar para ingreso a SESION
+    And ingreso y HAGO click en seccion PERFIL
+    And hago click en boton para CAMBIAR CONTRASENIA
+    And se deja campo vacio en CONTRASENIA "" y vacio en REPITE contrasenia ""
+    Then Hago click en botón CAMBIAR CONTRASENIA    
