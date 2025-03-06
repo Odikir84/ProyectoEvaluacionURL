@@ -68,8 +68,8 @@ Scenario: Validar orden de tareas por fecha de término
     And presionar el botón HOME para listar de tareas fecha
     Then ordenar tareas por fecha termino y validar orden
 
-@Test
-Scenario: Validar edicion de contraseña de usuario en sección perfil 
+
+Scenario: Validar que no se dejen campos vacios en edicion de contraseña de usuario en sección perfil 
     Given Que estoy autenticando en página de inicio para CAMBIO de contrasenia
     When ingreso de CORREO de INICIO autenticacion "ignacio.resp84@gmail.com"  
     And ingreso de CONTRASENIA usuario autenticacion "Sentra5678" 
@@ -77,4 +77,16 @@ Scenario: Validar edicion de contraseña de usuario en sección perfil
     And ingreso y HAGO click en seccion PERFIL
     And hago click en boton para CAMBIAR CONTRASENIA
     And se deja campo vacio en CONTRASENIA "" y vacio en REPITE contrasenia ""
-    Then Hago click en botón CAMBIAR CONTRASENIA    
+    Then Hago click en botón CAMBIAR CONTRASENIA 
+
+
+@Test
+Scenario: Validar que no se puedan dejar vaciós los campos al modificar la información personal del usuario.
+    Given usuario accede a la página para INICIO de sesion para validacion de usuario
+    When ingreso de EMAIL de inicio para validacion "ignacio.med84@gmail.com"  
+    And ingreso de contrasenia usuario VALIDACION "Sentra3210" 
+    And se presiona el botón ingresar para CAMBIOS
+    And ingresar a seccion PERFIL para validacion
+    And edicion de DATOS de usuario en BOTON editar
+    And no se Ingresa nada en Nombre "", apellido "", email ""
+    Then presiona el botón modificar usuario para termino de validacion      
