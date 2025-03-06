@@ -1,7 +1,7 @@
-Feature: Registro de errores en ingreso de pagina
+Feature: Registro de validaciones en ingreso de pagina
 
   Como tester, 
-  Quiero poder registrar los errores de sistema,
+  Quiero poder registrar las validaciones de sistema,
   Para luego dejar evidenciado en pruebas realizadas.
 
 
@@ -50,7 +50,7 @@ Scenario: Creacion exitosa de una nueva tarea
     And no se ingresan Nombre "", apellido "", email ""
     Then presiona el botón modificar usuario para finalizar edicion   
 
-@Test
+
 Scenario: Validar Orden de tareas de usuario por prioridad
     Given El usuario AUTENTICA para ingreso de PAGINA
     When ingreso de email de inicio para AUTENTICACION "ignacio.resp84@gmail.com"  
@@ -59,11 +59,11 @@ Scenario: Validar Orden de tareas de usuario por prioridad
     And presionar el botón Home para DESPLIEGUE de tareas
     Then VALIDA orden de tareas por prioridad     
 
-
+@Test
 Scenario: Validar orden de tareas por fecha de término
     Given como usuario accedo a SESION para ingreso fecha
-    When ingresar CORREO de inicio para tarea fecha
-    And ingresar de CONTRASEÑA usuario para tarea fecha
+    When ingresar CORREO de inicio para tarea fecha "ignacio.resp84@gmail.com"
+    And ingresar de CONTRASEÑA usuario para tarea fecha "Sentra5678"
     And presionar el botón de INGRESO para login orden fecha
     And presionar el botón HOME para listar de tareas fecha
     Then ordenar tareas por fecha termino y validar orden
