@@ -12,7 +12,6 @@ bin/
 # Configuración de IDEs (IntelliJ, Eclipse, VSCode)
 .idea/
 *.iml
-*.vscode/
 .project
 .classpath
 .settings/
