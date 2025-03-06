@@ -80,7 +80,7 @@ Scenario: Validar que no se dejen campos vacios en edicion de contraseña de usu
     Then Hago click en botón CAMBIAR CONTRASENIA 
 
 
-@Test
+
 Scenario: Validar que no se puedan dejar vaciós los campos al modificar la información personal del usuario.
     Given usuario accede a la página para INICIO de sesion para validacion de usuario
     When ingreso de EMAIL de inicio para validacion "ignacio.med84@gmail.com"  
@@ -90,3 +90,13 @@ Scenario: Validar que no se puedan dejar vaciós los campos al modificar la info
     And edicion de DATOS de usuario en BOTON editar
     And no se Ingresa nada en Nombre "", apellido "", email ""
     Then presiona el botón modificar usuario para termino de validacion      
+
+
+@Test
+Scenario: Validacion de ordenamiento de tareas de usuario por titulo 
+    Given El usuario accede a la página de SESION para ingreso y VALIDACION de titulos de tareas
+    When ingreso de email de inicio para validar titulo tareas "ignacio.med84@gmail.com"  
+    And ingreso de contraseña usuario para tarea a ordenar por TITULO "Sentra3210" 
+    And presiono botón de ingreso para login y posterio validacion titulo
+    And presiono botón HOME para LISTAR tareas a ordenar por TITULO
+    Then ordenar tareas por TITULO y validar orden   
