@@ -58,4 +58,12 @@ Scenario: Validar Orden de tareas de usuario por prioridad
     And presionar el botón de ingreso para AUTENTICACION de usuario
     And presionar el botón Home para DESPLIEGUE de tareas
     Then VALIDA orden de tareas por prioridad     
-    
+
+
+Scenario: Validar orden de tareas por fecha de término
+    Given como usuario accedo a SESION para ingreso fecha
+    When ingresar CORREO de inicio para tarea fecha
+    And ingresar de CONTRASEÑA usuario para tarea fecha
+    And presionar el botón de INGRESO para login orden fecha
+    And presionar el botón HOME para listar de tareas fecha
+    Then ordenar tareas por fecha termino y validar orden
