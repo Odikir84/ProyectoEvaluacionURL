@@ -1,9 +1,9 @@
 ######### ACERCA DE LAS EJECUCIONES DE PRUEBAS EN PROYECTOEVALUACIONURL ########
 
 
-Este proyecto implementa pruebas automatizadas usando **Selenium WebDriver**, **Cucumber** y **Java** para validar funcionalidades de una aplicaciÃ³n web.  
+Este proyecto implementa pruebas automatizadas usando **Selenium WebDriver**, **Cucumber** y **Java** para validar funcionalidades de una aplicacion web.  
 
-## ðŸš€ TecnologÃ­as Utilizadas  
+## Tecnologias Utilizadas  
 - **Java 17+**  
 - **Selenium WebDriver**  
 - **Cucumber (BDD)**  
@@ -17,37 +17,38 @@ Este proyecto implementa pruebas automatizadas usando **Selenium WebDriver**, **
 	El propÃ³sito de este tag es seleccionar un escenario especÃ­fico para la prueba. Debes mover este tag en el archivo "Login.feature" colocÃ¡ndolo encima de cada escenario que desees probar, tal como se muestra, pero sin el sÃ­mbolo "#" (comentario). El asterisco se debe aÃ±adir cuando ya no desees probar nada relacionado con el inicio de sesiÃ³n. Se recomienda probar los escenarios de arriba hacia abajo para una ejecuciÃ³n mÃ¡s ordenada.
 
 
-- Las siguientes pruebas se centran en el apartado del perfil una vez que se ha iniciado sesiÃ³n como usuario. En el archivo "Perfil.feature", encontrarÃ¡s casos relacionados con la modificaciÃ³n de la informaciÃ³n del usuario, la actualizaciÃ³n de la contraseÃ±a y validaciones de formularios. Para ejecutar estas pruebas en el cÃ³digo, sigue los mismos pasos que mencionÃ© anteriormente con el tag "@Test" en este archivo.
+- Las siguientes pruebas se centran en el apartado del perfil una vez que se ha iniciado sesion como usuario. En el archivo "Perfil.feature", encontraras casos relacionados con la modificacion de la informacion del usuario, la actualizacion de la contrasenia y validaciones de formularios. Para ejecutar estas pruebas en el codigo, sigue los mismos pasos que mencione anteriormente con el tag "@Test" en este archivo.
 
 
-- Finalmente, las pruebas corresponden a la pantalla de inicio (home) e involucran la creaciÃ³n de tareas, la visualizaciÃ³n de las mismas y el ordenamiento mediante "filtros". AdemÃ¡s, se incluye una validaciÃ³n en relaciÃ³n con la creaciÃ³n de tareas. Estas pruebas estÃ¡n contenidas en el archivo "Home.feature".
+- Finalmente, las pruebas corresponden a la pantalla de inicio (home) e involucran la creacion de tareas, la visualizacion de las mismas y el ordenamiento mediante "filtros". Ademas, se incluye una validacion en relacion con la creacion de tareas. Estas pruebas estan contenidas en el archivo "Home.feature".
 
-	Para ejecutar estas pruebas en el cÃ³digo, repite el mismo proceso mencionado anteriormente con el tag "@Test" en este archivo. AsegÃºrarse de que en los otros archivos de caracterÃ­sticas, como "Login.feature" y "Perfil.feature", el tag "@Test" estÃ© comentado para evitar ejecuciones no deseadas y posibles errores.
+	Para ejecutar estas pruebas en el codigo, repite el mismo proceso mencionado anteriormente con el tag "@Test" en este archivo. Asegurarse de que en los otros archivos de caracteristicas, como "Login.feature" y "Perfil.feature", el tag "@Test" esta comentado para evitar ejecuciones no deseadas y posibles errores.
 
-	Al igual que en los casos anteriores, utiliza el tag "@Test" para seleccionar el escenario especÃ­fico que deseas probar, moviÃ©ndolo sobre cada escenario sin el sÃ­mbolo "#" (comentario). Si ya no deseas realizar pruebas relacionadas con la pantalla de inicio, agrega un asterisco al tag.
+	Al igual que en los casos anteriores, utiliza el tag "@Test" para seleccionar el escenario especifico que deseas probar, moviendolo sobre cada escenario sin el simbolo "#" (comentario). Si ya no deseas realizar pruebas relacionadas con la pantalla de inicio, agrega un asterisco al tag.
 
-- En los pasos (steps) de cada escenario, se han definido valores predeterminados para los distintos campos. Estos valores son configurables segÃºn las necesidades de la prueba. Si se desea probar escenarios con valores diferentes, es posible modificar los datos en los steps correspondientes. Sin embargo, es fundamental garantizar que se cumplan las precondiciones especificadas en el PPF para asegurar la validez de las pruebas.
+- En los pasos (steps) de cada escenario, se han definido valores predeterminados para los distintos campos. Estos valores son configurables segun las necesidades de la prueba. Si se desea probar escenarios con valores diferentes, es posible modificar los datos en los steps correspondientes. Sin embargo, es fundamental garantizar que se cumplan las precondiciones especificadas en el PPF para asegurar la validez de las pruebas.
 
+- Se agrega proyecto de evaluacion a GIT, el cual informa detalladamente los cambios realizados ademas de informar estructura completa de proyecto y sus respectivas carpetas de creacion.
 
-## ðŸ“ **Estructura del Proyecto**  
+## **Estructura del Proyecto**  
 
-ðŸ“¦ PROYECTOEVALUACIONURL
-â”œâ”€â”€ .gradle
-â”œâ”€â”€ .vscode
-â”œâ”€â”€ build
-â”œâ”€â”€ gradle
-â”œâ”€â”€ ðŸ“ src
-  â”?  â””â”€â”€ ðŸ“ test # CÃ³digo de pruebas
-        â”?    â””â”€â”€ ðŸ“ java
-        â”?                â”œâ”€â”€ ðŸ“ pages # Page Objects (clases de pÃ¡ginas web)
-        â”?                â”œâ”€â”€ ðŸ“ runner # Ejecutores de pruebas con JUnit/TestNG
-        â”?                â””â”€â”€ ðŸ“ steps # DefiniciÃ³n de los pasos de Cucumber
-      â””â”€ ðŸ“ resources
-              â””â”€â”€ ðŸ“ features # Archivos .feature con escenarios Gherkin
-â”œâ”€â”€ .gitattributes
-â”œâ”€â”€ .gitignore # Ignorar archivos innecesarios
-â”œâ”€â”€ build.gradle # Uso de plugins, repositorios y dependencias
-â”œâ”€â”€ gradlew
-â”œâ”€â”€ gradlew.bat
-â”‚â”€â”€ settings.gradle
-â”‚â”€â”€ ðŸ“„ README.md # DocumentaciÃ³n del proyecto
+ PROYECTOEVALUACIONURL
+©¦©¤©¤.gradle
+©¦©¤©¤.vscode
+©¦©¤©¤build
+©¦©¤©¤gradle
+©¦©¤©¤src
+  ©¦ ©À©¤©¤ test # Codigo de pruebas
+  ©¦ ©¦ ©À©¤©¤ java
+  ©¦ ©¦ ©¦ ©À©¤©¤pages # Page Objects (clases de pÃ¡ginas web)
+  ©¦ ©¦ ©¦ ©À©¤©¤runner # Ejecutores de pruebas con JUnit/TestNG
+  ©¦ ©¦ ©¦ ©À©¤©¤steps # Definicion de los pasos de Cucumber
+  ©¦ ©À©¤©¤ resources
+  ©¦ ©¦ ©À©¤©¤ features # Archivos .feature con escenarios Gherkin
+©¦ ©À©¤©¤.gitattributes
+©¦ ©À©¤©¤.gitignore # Ignorar archivos innecesarios
+©¦ ©À©¤©¤build.gradle # Uso de plugins, repositorios y dependencias
+©¦ ©À©¤©¤gradlew
+©¦ ©À©¤©¤gradlew.bat
+©¦ ©À©¤©¤settings.gradle
+©¦ ©À©¤©¤README.md # Documentacion del proyecto
