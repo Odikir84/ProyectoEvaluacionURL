@@ -12,9 +12,9 @@ Este proyecto implementa pruebas automatizadas usando **Selenium WebDriver**, **
 
 - Mencionar que por medio de archivo TestRunner.java se pueden ejecutar todas las pruebas modeladas en el proyecto, en el cual desde este archivo se podra ejecutar cualquier prueba a realizarse aplicando "Run Test" o bien aplicando "gradle test" ingresando a la terminal y posicionandose en carpeta donde se encuentra alojado el proyecto. 
 
-- Los primeros casos de prueba estÃ¡n asociados con el proceso de inicio de sesiÃ³n (Login). En el PPF, se puede observar que estos casos estÃ¡n relacionados tanto con la creaciÃ³n de un usuario como con el inicio de sesiÃ³n como usuario, ademÃ¡s de incluir validaciones para el proceso de inicio de sesiÃ³n. Para ejecutar estos casos de prueba en el cÃ³digo, debes dirigirte al archivo "Login.feature" y descomentar el tag "@Test".
+- Los primeros casos de prueba estan asociados con el proceso de inicio de sesion (Login). En el PPF, se puede observar que estos casos estan relacionados tanto con la creacion de un usuario como con el inicio de sesion como usuario, ademas de incluir validaciones para el proceso de inicio de sesion. Para ejecutar estos casos de prueba en el codigo, debes dirigirte al archivo "Login.feature" y descomentar el tag "@Test".
 
-	El propÃ³sito de este tag es seleccionar un escenario especÃ­fico para la prueba. Debes mover este tag en el archivo "Login.feature" colocÃ¡ndolo encima de cada escenario que desees probar, tal como se muestra, pero sin el sÃ­mbolo "#" (comentario). El asterisco se debe aÃ±adir cuando ya no desees probar nada relacionado con el inicio de sesiÃ³n. Se recomienda probar los escenarios de arriba hacia abajo para una ejecuciÃ³n mÃ¡s ordenada.
+	El proposito de este tag es seleccionar un escenario especifico para la prueba. Debes mover este tag en el archivo "Login.feature" colocandolo encima de cada escenario que desees probar, tal como se muestra, pero sin el simbolo "#" (comentario). El asterisco se debe anadir cuando ya no desees probar nada relacionado con el inicio de sesion. Se recomienda probar los escenarios de arriba hacia abajo para una ejecucion mas ordenada.
 
 
 - Las siguientes pruebas se centran en el apartado del perfil una vez que se ha iniciado sesion como usuario. En el archivo "Perfil.feature", encontraras casos relacionados con la modificacion de la informacion del usuario, la actualizacion de la contrasenia y validaciones de formularios. Para ejecutar estas pruebas en el codigo, sigue los mismos pasos que mencione anteriormente con el tag "@Test" en este archivo.
@@ -40,7 +40,7 @@ Este proyecto implementa pruebas automatizadas usando **Selenium WebDriver**, **
 ©¦©¤©¤src
   ©¦ ©À©¤©¤ test # Codigo de pruebas
   ©¦ ©¦ ©À©¤©¤ java
-  ©¦ ©¦ ©¦ ©À©¤©¤pages # Page Objects (clases de pÃ¡ginas web)
+  ©¦ ©¦ ©¦ ©À©¤©¤pages # Page Objects (clases de paginas web)
   ©¦ ©¦ ©¦ ©À©¤©¤runner # Ejecutores de pruebas con JUnit/TestNG
   ©¦ ©¦ ©¦ ©À©¤©¤steps # Definicion de los pasos de Cucumber
   ©¦ ©À©¤©¤ resources
